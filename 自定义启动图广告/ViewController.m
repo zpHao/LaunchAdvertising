@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ADViewController.h"
 
 @interface ViewController ()
 
@@ -16,9 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"首页";
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    //跳转广告的通知
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(skipToAD) name:@"skipToAD" object:nil];
 }
-
+- (void)skipToAD{
+    ADViewController *adVC = [[ADViewController alloc] init];
+    [self.navigationController pushViewController:adVC animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -15,6 +15,9 @@
 		43924C4D1ECBFB6B00B5114C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43924C4B1ECBFB6B00B5114C /* LaunchScreen.storyboard */; };
 		43924C581ECBFB6B00B5114C /* ________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43924C571ECBFB6B00B5114C /* ________Tests.m */; };
 		43924C631ECBFB6B00B5114C /* ________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43924C621ECBFB6B00B5114C /* ________UITests.m */; };
+		43924C721ECBFBB000B5114C /* AppDelegate+LanuchAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 43924C711ECBFBB000B5114C /* AppDelegate+LanuchAD.m */; };
+		43924C751ECBFC6E00B5114C /* DisplayADView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43924C741ECBFC6E00B5114C /* DisplayADView.m */; };
+		43924C781ECC3E0000B5114C /* ADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43924C771ECC3E0000B5114C /* ADViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		43924C5E1ECBFB6B00B5114C /* 自定义启动图广告UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义启动图广告UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43924C621ECBFB6B00B5114C /* ________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "________UITests.m"; sourceTree = "<group>"; };
 		43924C641ECBFB6B00B5114C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43924C701ECBFBB000B5114C /* AppDelegate+LanuchAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+LanuchAD.h"; sourceTree = "<group>"; };
+		43924C711ECBFBB000B5114C /* AppDelegate+LanuchAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LanuchAD.m"; sourceTree = "<group>"; };
+		43924C731ECBFC6E00B5114C /* DisplayADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayADView.h; sourceTree = "<group>"; };
+		43924C741ECBFC6E00B5114C /* DisplayADView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayADView.m; sourceTree = "<group>"; };
+		43924C761ECC3E0000B5114C /* ADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADViewController.h; sourceTree = "<group>"; };
+		43924C771ECC3E0000B5114C /* ADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				43924C411ECBFB6B00B5114C /* AppDelegate.m */,
 				43924C431ECBFB6B00B5114C /* ViewController.h */,
 				43924C441ECBFB6B00B5114C /* ViewController.m */,
+				43924C701ECBFBB000B5114C /* AppDelegate+LanuchAD.h */,
+				43924C711ECBFBB000B5114C /* AppDelegate+LanuchAD.m */,
+				43924C731ECBFC6E00B5114C /* DisplayADView.h */,
+				43924C741ECBFC6E00B5114C /* DisplayADView.m */,
+				43924C761ECC3E0000B5114C /* ADViewController.h */,
+				43924C771ECC3E0000B5114C /* ADViewController.m */,
 				43924C461ECBFB6B00B5114C /* Main.storyboard */,
 				43924C491ECBFB6B00B5114C /* Assets.xcassets */,
 				43924C4B1ECBFB6B00B5114C /* LaunchScreen.storyboard */,
@@ -273,7 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43924C721ECBFBB000B5114C /* AppDelegate+LanuchAD.m in Sources */,
+				43924C781ECC3E0000B5114C /* ADViewController.m in Sources */,
 				43924C451ECBFB6B00B5114C /* ViewController.m in Sources */,
+				43924C751ECBFC6E00B5114C /* DisplayADView.m in Sources */,
 				43924C421ECBFB6B00B5114C /* AppDelegate.m in Sources */,
 				43924C3F1ECBFB6B00B5114C /* main.m in Sources */,
 			);
@@ -426,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "自定义启动图广告/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "haozp.--------";
@@ -437,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "自定义启动图广告/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "haozp.--------";
